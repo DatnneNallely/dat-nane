@@ -1,0 +1,557 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a1e3b; /* Fondo azul */
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #0a1e3b; /* Fondo azul */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+.logo-container p {
+    margin-left: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px; /* Reduce el padding para subir la sección */
+    background-color: #0a1e3b; /* Mantiene el azul */
+    margin-top: -50px; /* Mueve toda la sección hacia arriba */
+}
+
+.hero-text {
+    max-width: 900px;
+    margin-top: -50px; /* Subir aún más la posición del texto */
+}
+
+.hero h1 {
+    font-size: 100px; /* Tamaño más grande para "Unlimited" */
+    font-weight: 900;
+    margin-bottom: 30px;
+    max-width: 120%;
+}
+
+.hero h1 .web-hosting {
+    font-size: 60px; /* Tamaño más pequeño para "Web Hosting" */
+    display: block;
+    margin-top: -10px; /* Acerca "Web Hosting" a "Unlimited" */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 40px;
+    background-color: #01d28e;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.hero-image img {
+    max-width: 150%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 20px;
+    background-color: #09182e;
+    text-align: center;
+}
+
+.services-button {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px; /* Ajusta el espacio entre el título y el párrafo */
+}
+
+.services-description {
+    font-size: 18px;
+    color: #fff; /* Color del texto (blanco) */
+    margin-bottom: 40px; /* Espacio debajo del párrafo */
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.service-box div {
+    background-color: 0;
+    padding: 30px;
+    border-radius: 0;
+    width: 30%;
+    text-align: center;
+    position: relative; /* Necesario para posicionar el botón */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje horizontal */
+    justify-content: center; /* Centra los elementos en el eje vertical */
+}
+
+.service-image img {
+    width: 300px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Read More Button Styles */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #01d28e;
+    background-color: #0a1e3b;
+    border: 2px solid #01d28e;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more i {
+    margin-left: 10px; /* Espacio entre el texto y la flecha */
+    font-size: 18px; /* Tamaño de la flecha */
+}
+
+.read-more:hover {
+    background-color: rgba(1, 210, 142, 0.2); /* Fondo ligeramente transparente */
+    color: #01d28e; /* Color del texto en hover */
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #ffffff;
+    color: #0a1e3b;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center; /* Centra los planes de precios */
+    gap: 20px; /* Espacio entre los planes */
+}
+
+.pricing-plan {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #0a1e3b;
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px; /* Ajusta el ancho si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para resaltar */
+    border: 2px solid #0a1e3b; /* Borde azulino */
+    transition: border-color 0.3s, background-color 0.3s; /* Transición para el cambio de estado */
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan p {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    margin: 10px 0;
+}
+/* Estilo para el plan al pasar el mouse (hover) */
+.pricing-plan:hover {
+    background-color: #e0f0ff; /* Color azulino claro */
+    border-color: #01d28e; /* Borde azulino más brillante */
+}
+
+/* Review Section */
+.reviews {
+    background-color: #09182e;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.review-map {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0a1e3b; /* Fondo blanco para el pie de página */
+    color: #ffffff; /* Color del texto en el pie de página */
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.footer-logo-and-icons {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea el logo y los íconos a la izquierda */
+    margin-bottom: 20px; /* Espacio debajo del contenedor de logo e íconos */
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center; /* Alinea el logo, "CloudFlex" y los íconos */
+    margin-bottom: 10px; /* Espacio debajo de los íconos */
+}
+
+.footer-logo {
+    height: 40px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y "CloudFlex" */
+}
+
+.footer-logo-container p {
+    margin: 0 10px; /* Espacio entre "CloudFlex" y los íconos */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer-icon-container {
+    display: flex; /* Alinea los íconos horizontalmente */
+    align-items: center;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.footer-icon-container img {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción del ícono */
+    max-width: 100%; /* Previene que los íconos crezcan más de su tamaño original */
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff; /* Color del texto en el pie de página */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    justify-content: flex-start; /* Alinea los enlaces y el newsletter a la izquierda */
+    width: 100%;
+    margin-bottom: 30px; /* Espacio debajo de las secciones de enlaces y newsletter */
+}
+
+.footer-links div, .footer-newsletter {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-links h3, .footer-newsletter h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff; /* Color del enlace en el pie de página */
+    text-decoration: none;
+}
+
+.footer-newsletter form {
+    display: flex;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+}
+
+.footer-newsletter button {
+    background-color: #01d28e;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ffffff; /* Color del texto en la parte inferior del pie de página */
+    font-size: 14px;
+}
+/* Estilo para el botón en la sección Powering */
+.powering-button {
+    background-color: #007bff; /* Botón azul */
+    color: white; /* Texto blanco */
+    padding: 15px 15px; /* Tamaño del botón */
+    border-radius: 30px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Puntero en forma de mano */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Hover para el botón en la sección Powering */
+.powering-button:hover {
+    background-color: #ffffff; /* Color más oscuro al hacer hover */
+}
+
+/* Estilo de la sección Powering */
+.powering {
+    background-color: #0a1e3b; /* Fondo claro, pero distinto al blanco para diferenciarse */
+    padding: 60px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    margin-top: 0; /* Conexión directa con la sección anterior */
+}
+
+.powering-badge {
+    font-size: 16px;
+    font-weight: bold;
+    color: #01d28e /* Azul para que resalte */
+    margin-bottom: 10px;
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+   
+}
+
+.powering h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.powering p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.powering-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+/* Diseño de botones genéricos */
+button, .powering-button, .footer-newsletter button {
+    background-color: #01d28e; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border: none; /* Elimina el borde */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave en hover */
+}
+
+/* Cambia el color al pasar el mouse por encima del botón */
+button:hover, .powering-button:hover, .footer-newsletter button:hover {
+    background-color: #019d6b; /* Color más oscuro al hacer hover */
+}
+
+/* Botón de la sección Hero */
+.hero .domain-search button {
+    background-color: #01d28e; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado */
+    border-radius: 30px; /* Bordes redondeados */
+    border: 50px; /* Sin bordes */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para el botón de la sección Hero */
+.hero .domain-search button:hover {
+    background-color: #019d6b; /* Color más oscuro en hover */
+}
+
+/* Diseño específico del botón "Start Free" */
+.hero .domain-search button, .powering-button {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 16px;
+    padding: 15px 30px; /* Tamaño y espaciado del botón más grande */
+    border-radius: 50px; /* Bordes extra redondeados */
+}
+
+/* Diseño para el botón "Start Free" en la sección Powering */
+.powering-button {
+    background-color: #01d28e;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de profundidad */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Hover del botón en la sección Powering */
+.powering-button:hover {
+    background-color: #019d6b;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Mayor sombra en hover */
+}
+
+/* Estilo del botón en el footer */
+.footer-newsletter button {
+    background-color: #01d28e; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #019d6b; /* Cambia el color al hacer hover */
+}
+
+/* Estilos adicionales para formularios y entradas */
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 70%; /* Ajusta el ancho de los campos de entrada */
+    font-size: 16px;
+}
+
+select {
+    width: 100px; /* Ajusta el tamaño del select */
+}
+
+/* Ajustes de la búsqueda de dominios en la sección Hero */
+.hero .domain-search input {
+    width: calc(100% - 120px); /* Ajusta el ancho del campo de texto */
+}
+
+/* Performance Section */
+.performance {
+    background-color: #ffffff; /* Fondo blanco */
+       
+   color: #0a1e3b; /* Color del texto */ 
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.performance-container {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos se apilen verticalmente */
+}
+
+.performance-item {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 40px; /* Espacio entre los elementos */
+    flex-direction: row; /* Alinea los elementos en fila */
+}
+
+.performance-item:nth-child(1) {
+    flex-direction: row; /* Para el primer ítem, imagen a la derecha, texto a la izquierda */
+}
+
+.performance-item:nth-child(2) {
+    flex-direction: row-reverse; /* Para el segundo ítem, imagen a la derecha, texto a la izquierda */
+}
+
+.performance-item img {
+    width: 50%; /* Ajusta el ancho de las imágenes al 50% del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-left: 20px; /* Espacio entre la imagen y el texto para el primer ítem */
+    margin-right: 20px; /* Espacio entre la imagen y el texto para el segundo ítem */
+}
+
+.performance-item:nth-child(1) img {
+    margin-left: 20px; /* Espacio entre la imagen y el texto para el primer ítem */
+}
+
+.performance-item:nth-child(2) img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto para el segundo ítem */
+}
+
+.performance-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.performance-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.performance-item a {
+    color: #0b23f8; /* Color del enlace */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
