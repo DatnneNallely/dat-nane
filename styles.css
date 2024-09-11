@@ -146,7 +146,7 @@ nav a {
 .pricing-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .pricing-content {
@@ -174,7 +174,7 @@ nav a {
 }
 
 .feature img {
-    width: 50px;
+    width: 100px;
     margin-bottom: 15px;
 }
 
@@ -566,6 +566,7 @@ select {
 
 .performance-item:nth-child(1) {
     flex-direction: row; /* Para el primer ítem, imagen a la derecha, texto a la izquierda */
+      text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .performance-item:nth-child(2) {
@@ -575,16 +576,16 @@ select {
 .performance-item img {
     width: 50%; /* Ajusta el ancho de las imágenes al 50% del contenedor */
     height: auto; /* Mantiene la proporción de las imágenes */
-    margin-left: 20px; /* Espacio entre la imagen y el texto para el primer ítem */
-    margin-right: 20px; /* Espacio entre la imagen y el texto para el segundo ítem */
+    margin-left: px; /* Espacio entre la imagen y el texto para el primer ítem */
+    margin-right: 50px; /* Espacio entre la imagen y el texto para el segundo ítem */
 }
 
 .performance-item:nth-child(1) img {
-    margin-left: 20px; /* Espacio entre la imagen y el texto para el primer ítem */
+    margin-left: 50px; /* Espacio entre la imagen y el texto para el primer ítem */
 }
 
 .performance-item:nth-child(2) img {
-    margin-right: 20px; /* Espacio entre la imagen y el texto para el segundo ítem */
+    margin-right: 50px; /* Espacio entre la imagen y el texto para el segundo ítem */
 }
 
 .performance-item h3 {
@@ -600,7 +601,7 @@ select {
 .performance-item a {
     color: #0b23f8; /* Color del enlace */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
 .footer-newsletter {
@@ -627,12 +628,13 @@ select {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Asegura que los elementos del formulario estén alineados a la izquierda */
-    width: 100%;
+    width: 30%;
 }
 
 .footer-newsletter input {
+
     padding: 10px;
-    border-radius: 20px 0 0 20px; /* Reduce el radio del borde */
+    border-radius: 10px 0 0 10px; /* Reduce el radio del borde */
     border: none;
     width: 200px; /* Ajusta el ancho del input a un tamaño más pequeño */
     text-align: left; /* Alinea el texto del input a la izquierda */
@@ -640,11 +642,79 @@ select {
 
 .footer-newsletter button {
     background-color: #01d28e;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     color: white;
-    border-radius: 0 20px 20px 0; /* Reduce el radio del borde */
+    border-radius: 0 10px 10px 0; /* Reduce el radio del borde */
     cursor: pointer;
     text-align: center;
 }
 
+.internal-pages {
+    text-align: right; /* Alinear el título a la derecha */
+}
+
+.menu-list {
+    display: flex;  /* Mostrar los elementos en una fila */
+    justify-content: flex-end; /* Alinear todo hacia la derecha */
+    gap: 40px; /* Espacio entre los diferentes <ul> */
+}
+
+.menu-list ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px; /* Espacio entre los elementos de cada lista */
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #fff; /* Ajusta el color del texto */
+}
+.partners-section {
+    text-align: right; /* Alinear el título "Partners" a la derecha */
+}
+
+.partners-list {
+    display: flex;  /* Mostrar los elementos en una fila */
+    justify-content: flex-end; /* Alinear todo hacia la derecha */
+    gap: 40px; /* Espacio entre los diferentes <ul> */
+}
+
+.partners-list ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.partners-list li {
+    margin-bottom: 10px; /* Espacio entre los elementos de cada lista */
+}
+
+.partners-list a {
+    text-decoration: none;
+    color: #fff; /* Ajusta el color del texto */
+}
+.text-container {
+  text-align: left; /* Alineación del texto a la izquierda */
+  width: 300px; /* Ajusta el ancho para que el texto se divida en líneas */
+  line-height: 1.5; /* Espaciado entre las líneas */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Esto alinea los elementos en el centro verticalmente */
+}
+
+.cloudflex {
+    flex: 1; /* Esto permite que "CloudFlex" ocupe todo el espacio disponible */
+    text-align: left;
+}
+
+.internalpages {
+    flex: 1; /* Esto asegura que "Internal Pages" también ocupe el espacio disponible */
+    text-align: right; /* Puedes ajustar a 'left', 'center', o 'right' según donde quieres que esté alineado */
+}
