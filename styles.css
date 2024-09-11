@@ -174,7 +174,7 @@ nav a {
 }
 
 .feature img {
-    width: 100px;
+    width: 50px;
     margin-bottom: 15px;
 }
 
@@ -266,9 +266,11 @@ nav a {
 
 /* Review Section */
 .reviews {
-    background-color: #0a1e3b;
+    background-color: #fff;
     padding: 100px 20px;
     text-align: center;
+    color: #0a1e3b; /* Color del texto en el pie de página */
+
 }
 
 .reviews h2 {
@@ -697,24 +699,4 @@ select {
 .partners-list a {
     text-decoration: none;
     color: #fff; /* Ajusta el color del texto */
-}
-.text-container {
-  text-align: left; /* Alineación del texto a la izquierda */
-  width: 300px; /* Ajusta el ancho para que el texto se divida en líneas */
-  line-height: 1.5; /* Espaciado entre las líneas */
-}
-
-.container {
-    display: flex;
-    align-items: center; /* Esto alinea los elementos en el centro verticalmente */
-}
-
-.cloudflex {
-    flex: 1; /* Esto permite que "CloudFlex" ocupe todo el espacio disponible */
-    text-align: left;
-}
-
-.internalpages {
-    flex: 1; /* Esto asegura que "Internal Pages" también ocupe el espacio disponible */
-    text-align: right; /* Puedes ajustar a 'left', 'center', o 'right' según donde quieres que esté alineado */
 }
