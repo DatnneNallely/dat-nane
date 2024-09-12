@@ -267,7 +267,7 @@ nav a {
 /* Review Section */
 .reviews {
     background-color: #fff;
-    padding: 100px 20px;
+    padding: px 20px;
     text-align: center;
     color: #0a1e3b; /* Color del texto en el pie de página */
 
@@ -285,70 +285,8 @@ nav a {
     margin-bottom: 40px;
 }
 
-/* Footer Section */
-footer {
-    background-color: #0a1e3b; /* Fondo blanco para el pie de página */
-    color: #ffffff; /* Color del texto en el pie de página */
-    padding: 40px 20px;
-}
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
-    text-align: left; /* Alinea el texto a la izquierda */
-}
 
-.footer-logo-and-icons {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: flex-start; /* Alinea el logo y los íconos a la izquierda */
-    margin-bottom: 20px; /* Espacio debajo del contenedor de logo e íconos */
-}
-
-.footer-logo-container {
-    display: flex;
-    align-items: center; /* Alinea el logo, "CloudFlex" y los íconos */
-    margin-bottom: 10px; /* Espacio debajo de los íconos */
-}
-
-.footer-logo {
-    height: 40px; /* Ajusta el tamaño del logo */
-    margin-right: 10px; /* Espacio entre el logo y "CloudFlex" */
-}
-
-.footer-logo-container p {
-    margin: 0 10px; /* Espacio entre "CloudFlex" y los íconos */
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.footer-icon-container {
-    display: flex; /* Alinea los íconos horizontalmente */
-    align-items: center;
-    gap: 10px; /* Espacio entre los íconos */
-}
-
-.footer-icon-container img {
-    width: 20px; /* Ajusta el tamaño del ícono */
-    height: auto; /* Mantiene la proporción del ícono */
-    max-width: 100%; /* Previene que los íconos crezcan más de su tamaño original */
-}
-
-.footer-description {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ffffff; /* Color del texto en el pie de página */
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-bottom: 20px; /* Espacio debajo del texto */
-}
-
-.footer-links, .footer-newsletter {
-    display: flex;
-    justify-content: flex-start; /* Alinea los enlaces y el newsletter a la izquierda */
-    width: 100%;
-    margin-bottom: 30px; /* Espacio debajo de las secciones de enlaces y newsletter */
-}
 
 .footer-links div, .footer-newsletter {
     flex: 1;
@@ -356,7 +294,7 @@ footer {
 }
 
 .footer-links h3, .footer-newsletter h3 {
-    margin: 0 0 10px;
+    margin:  10px;
     font-size: 18px;
 }
 
@@ -399,7 +337,70 @@ footer {
     color: #ffffff; /* Color del texto en la parte inferior del pie de página */
     font-size: 14px;
 }
+/* Footer Section */
+footer {
+    background-color: #0a1e3b; /* Fondo blanco para el pie de página */
+    color: #ffffff; /* Color del texto en el pie de página */
+    padding: 40px 20px;
+}
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.footer-logo-and-icons {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea el logo y los íconos a la izquierda */
+    margin-bottom: 20px; /* Espacio debajo del contenedor de logo e íconos */
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center; /* Alinea el logo, "CloudFlex" y los íconos */
+    margin-bottom: 10px; /* Espacio debajo de los íconos */
+}
+
+.footer-logo {
+    height: 40px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y "CloudFlex" */
+}
+
+.footer-logo-container p {
+    margin: 0 10px; /* Espacio entre "CloudFlex" y los íconos */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-icon-container {
+    display: flex; /* Alinea los íconos horizontalmente */
+    align-items: center;
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.footer-icon-container img {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción del ícono */
+    max-width: 100%; /* Previene que los íconos crezcan más de su tamaño original */
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffff; /* Color del texto en el pie de página */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 2px; /* Espacio debajo del texto */
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    justify-content: flex-start; /* Alinea los enlaces y el newsletter a la izquierda */
+    width: 100%;
+    margin-bottom: 10px; /* Espacio debajo de las secciones de enlaces y newsletter */
+}
 
 
 /* Estilo para el botón en la sección Powering */
@@ -414,7 +415,7 @@ footer {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    margin-top: 20px; /* Espacio entre el texto y el botón */
+    margin-top: 10px; /* Espacio entre el texto y el botón */
     transition: background-color 0.3s, color 0.3s;
 }
 
