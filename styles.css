@@ -399,6 +399,9 @@ footer {
     color: #ffffff; /* Color del texto en la parte inferior del pie de página */
     font-size: 14px;
 }
+
+
+
 /* Estilo para el botón en la sección Powering */
 .powering-button {
     display: inline-flex;
@@ -699,4 +702,44 @@ select {
 .partners-list a {
     text-decoration: none;
     color: #fff; /* Ajusta el color del texto */
+}
+/* Estilo para la sección "So Flucking Easy for Deployment" */
+.easy-deployment {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #0a1e3b; /* Color del texto oscuro */
+    padding: 60px 20px; /* Espaciado interno */
+    text-align: right; /* Alineación del texto a la izquierda */
+    position: relative; /* Para posicionar el botón correctamente */
+}
+
+.easy-deployment h3 {
+    font-size: 28px; /* Tamaño del título */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.easy-deployment p {
+    font-size: 16px; /* Tamaño del texto del párrafo */
+    margin-bottom: 40px; /* Espacio debajo del párrafo */
+    max-width: 500px; /* Limita el ancho del párrafo para mejor lectura */
+}
+
+.easy-deployment .button-container {
+    text-align: right; /* Alineación del contenedor del botón a la derecha */
+}
+
+.easy-deployment a {
+    background-color: #01d28e; /* Color de fondo del enlace */
+    color: white; /* Color del texto del enlace */
+    padding: 10px 20px; /* Espaciado dentro del enlace */
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño del texto del enlace */
+    font-weight: 600; /* Negrita para el texto del enlace */
+    transition: background-color 0.3s ease; /* Transición suave en hover */
+    display: inline-block; /* Asegura que el enlace se comporte como un botón */
+}
+
+.easy-deployment a:hover {
+    background-color: #019d6b; /* Color más oscuro al hacer hover */
 }
